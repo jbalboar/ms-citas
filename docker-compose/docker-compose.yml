@@ -4,8 +4,6 @@ services:
     container_name: ms-medicos
     ports:
       - "9092:9092"
-    environment:
-      USER_DEMO: Netec
     healthcheck:
       test: ["CMD", "curl", "-f", "http://127.0.0.1:9092/medico"]
       interval: 30s
